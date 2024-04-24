@@ -1,1 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Quicksand:wght@300..700&family=Sedan:ital@0;1&display=swap');
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.sedan-regular-italic {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name*?
+    /* <weight>: Use a value from 300 to 700*/
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700*/
+
+.edu-nsw {
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: max-content;
+    width: 100vw;
+    background: #ffffff;
+    overflow-x: hidden;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+/*Header Begins*/
+
+#header {
+    position: fixed;
+    height: 70px;
+    width: 100vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e7e7e7;
+    background: #ffffff;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+.header-logo h2 {
+    color: #0400ffee;
+    font-size: 35px;
+    letter-spacing: 0;
+}
+
+.header-right {
+    width: 30%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav-container a {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 60px 0 0;
+    transition: 0.3s ease;
+}
+
+.header-nav-container a:hover {
+    color: #0400ffee;
+    text-decoration: underline;
+}
+
+.header-cta-container a {
+    padding: 10px 5px;
+    background: #0400ffee;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.cancel-container {
+    display: none;
+}
+
+
+/*Header Ends*/
+
+
+/*Main Begins*/
+
+#main {
+    height: max-content;
+    width: 100vw;
+}
+
+
+/*Hero Begins*/
+
+#hero {
+    height: 100vh;
+    width: 100vw;
+    background: url(../imgs/cousera-hero.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 60px;
+}
+
+.hero-content {
+    height: max-content;
+    width: 50%;
+}
+
+.hero-header {
+    height: max-content;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.hero-header h2 {
+    font-size: 50px;
+    color: #222222;
+    font-weight: 700;
+}
+
+.hero-cta-container {
+    height: max-content;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.hero-cta-container a {
+    padding: 20px 45px;
+    background: #0400ffee;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.hero-talk {
+    height: max-content;
+    width: 100%;
+    margin-top: 0 0 20px 0;
+}
+
+.hero-talk p {
+    color: #222222;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*Hero Ends*/
+
+
+/*Partners Begins*/
+
+#partner {
+    height: max-content;
+    width: 100%;
+    background: #ebfdf4;
+}
+
+.partner {
+    height: 100%;
+    width: 100%;
+}
+
+.partner-header {
+    height: max-content;
+    width: 100%;
+    padding: 20px 20%;
+}
+
+.partner-header h2 {
+    font-size: 35px;
+    font-size: 500;
+    text-align: center;
+    color: #222222;
+}
+
+.partner-container {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.parner-img-container {
+    height: 80px;
+    width: 120px;
+}
+
+.parner-img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Partners Ends*/
+
+
+/*Courses Begins*/
+
+#courses {
+    height: max-content;
+    width: 100vw;
+}
+
+.courses {
+    height: 100%;
+    width: 100%;
+}
+
+.courses-header {
+    height: max-content;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.courses-header h2 {
+    font-size: 25px;
+    font-size: 300;
+    text-align: flex-start;
+    color: #222222;
+}
+
+.course-content {
+    width: 100%;
+    height: max-content;
+    padding: 0 20px;
+}
+
+.courses-content-top p {
+    color: #222222;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.courses-content-bottom {
+    height: max-content;
+    width: 100%;
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course-container {
+    height: 80px;
+    width: 95%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 300;
+    font-size: small;
+}
+
+.course-container-left {
+    width: 20%;
+    height: 100%;
+}
+
+.course-img-container {
+    height: 100%;
+    width: 100%;
+}
+
+.course-container-left img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.course-container-right {
+    height: max-content;
+    width: 80%;
+    padding: 0 10px;
+}
+
+.course-container-right-top {
+    margin: 0 0 10px 0;
+}
+
+.course-container-right-top h3 {
+    font-weight: 700;
+}
+
+
+/*Courses Ends*/
+
+
+/*Journey Begins*/
+
+#journey {
+    height: max-content;
+    width: 100vw;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.journey {
+    height: max-content;
+    width: 100%;
+}
+
+.journey-top {
+    height: max-content;
+    width: 100%;
+}
+
+.journey-header-top {
+    margin-bottom: 20px;
+}
+
+.journey-header-top h3 {
+    color: #470147;
+}
+
+.journey-header-middle {
+    margin-bottom: 20px;
+}
+
+.journey-header-middle h2 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.journey-header-bottom {
+    margin-bottom: 20px;
+}
+
+.journey-header-bottom p {
+    color: #222222;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.journey-bottom {
+    height: max-content;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.journey-bottom-top {
+    height: 60vh;
+    width: 60%;
+}
+
+.journey-course {
+    height: 100%;
+    width: 100%;
+}
+
+.journey-bottom-top img {
+    height: 100%;
+    width: 100%;
+}
+
+.journey-bottom-cta-container {
+    height: 100px;
+    width: 100%;
+}
+
+.journey-bottom-cta-container a {
+    padding: 20px 45px;
+    background: #0400ffee;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/*Journey Ends*/
+
+
+/*Learners Begins*/
+
+#learners-report {
+    height: 80vh;
+    width: 100vw;
+    background: #ebfdf4;
+}
+
+.learners-report {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.leaners-report-left {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+.learners-ig-container {
+    height: 100%;
+    width: 100%;
+}
+
+.learners-ig-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.learners-report-right {
+    height: max-content;
+    width: 50%;
+    padding: 0 40px 0 0;
+}
+
+.learners-right-content {
+    height: max-content;
+    width: 100%;
+}
+
+.learners-header {
+    height: max-content;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.learners-header h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.learners-talk p {
+    color: #222222;
+    font-size: 500;
+    font-size: 18px;
+}
+
+.learners-cta-container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.learners-cta-container a {
+    padding: 20px 45px;
+    background: #0400ffee;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/*Learners Ends*/
+
+
+/*Testimonial Begins*/
+
+#testimonial {
+    position: relative;
+    height: max-content;
+    width: 100vw;
+    margin: 20px 0 120px 0;
+}
+
+.testimonial {
+    height: 100%;
+    width: 100%;
+}
+
+.testimonial-header {
+    padding: 50px 0;
+    height: max-content;
+    width: 100%;
+}
+
+.testimonial-header h2 {
+    text-align: center;
+    color: #222222;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.testimonial-content {
+    height: max-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.client-testimonial {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-testimonial-top {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-img-container {
+    height: 150px;
+    width: 160px;
+}
+
+.client-img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.client-name-container,
+.client-country {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-name-container h3 {
+    font-weight: 600;
+    color: #222222;
+}
+
+.client-country p {
+    font-weight: 400;
+    color: #222222;
+}
+
+.client-testimonial-bottom {
+    height: max-content;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.client-testimonial-bottom p {
+    text-align: center;
+}
+
+.testimonial-navigation {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.move-left,
+.move-right {
+    position: relative;
+    height: 300px;
+    width: 50px;
+    border: 1px solid #222222;
+    border-radius: 10px;
+}
+
+.left-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    left: 0;
+}
+
+.left-nav::after {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: -25px;
+    height: 1px;
+    width: 100px;
+    background: #222222;
+    transform: rotate(75deg);
+}
+
+.left-nav::before {
+    content: '';
+    position: absolute;
+    top: -48px;
+    left: -25px;
+    height: 1px;
+    width: 100px;
+    background: #222222;
+    transform: rotate(-75deg);
+}
+
+.right-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    left: 0;
+}
+
+.right-nav::after {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: -25px;
+    height: 1px;
+    width: 100px;
+    background: #222222;
+    transform: rotate(-75deg);
+}
+
+.right-nav::before {
+    content: '';
+    position: absolute;
+    top: -48px;
+    left: -25px;
+    height: 1px;
+    width: 100px;
+    background: #222222;
+    transform: rotate(75deg);
+}
+
+
+/*Testimonial Ends*/
+
+
+/*Main Ends*/
+
+
+/*Footer Begins*/
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background: #ebfdf4;
+    padding: 0 20px;
+}
+
+.footer {
+    height: 100%;
+    width: 100%;
+}
+
+.footer-top {
+    height: calc(100% - 20px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-top-left {
+    width: 40%;
+    height: max-content;
+}
+
+.footer-logo h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #0400ffee;
+}
+
+.footer-top-right {
+    height: 100%;
+    width: 40%;
+    display: flex;
+}
+
+.footer-detail-container {
+    height: 100%;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.footer-container-top {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-bottom {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+
+/*Footer Ends*/

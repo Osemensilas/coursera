@@ -1,1 +1,265 @@
+@media only screen and (max-width: 1030px) {
+    .header-right {
+        width: 50%;
+    }
+    #hero {
+        height: 60vh;
+        background-position: -350px center;
+    }
+    .hero {
+        padding: 0 30px;
+    }
+    .hero-content {
+        width: 55%;
+    }
+    .hero-header h2 {
+        font-size: 25px;
+        color: #222222;
+        font-weight: 700;
+    }
+    .partner-header h2 {
+        font-size: 25px;
+    }
+    .courses-content-bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .journey-bottom-top {
+        height: 40vh;
+        width: 80%;
+    }
+    #learners-report {
+        height: 40vh;
+    }
+    #footer {
+        height: 20vh;
+    }
+}
 
+@media only screen and (max-width: 900px) {
+    .parner-img-container {
+        height: 50px;
+        width: 90px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #hero {
+        background-position: -250px center;
+    }
+    #footer {
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-nav-container {
+        display: none;
+        transition: 0.3s ease;
+    }
+    .header-nav-container.active {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .header-right {
+        width: max-content;
+    }
+    .header-nav-container a:first-child {
+        margin-top: 50px;
+    }
+    .header-nav-container a {
+        margin: 20px 10px 10px 10px;
+        padding: 20px 10px;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+    .hamburger-container {
+        display: block;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        border: 1px solid #222222;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .hamburger {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 1px;
+        width: 25px;
+        background: #222222;
+    }
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        height: 1px;
+        width: 25px;
+        background: #222222;
+    }
+    .hamburger::before {
+        content: '';
+        position: absolute;
+        top: -7px;
+        left: 0;
+        height: 1px;
+        width: 25px;
+        background: #222222;
+    }
+    .cancel-container.active {
+        display: block;
+        border: 1px solid black;
+        z-index: 9;
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .cancel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 0;
+        width: 0;
+    }
+    .cancel::after {
+        content: '';
+        position: absolute;
+        top: -12px;
+        left: 0;
+        height: 25px;
+        width: 1px;
+        background: black;
+        transform: rotate(45deg);
+    }
+    .cancel::before {
+        content: '';
+        position: absolute;
+        top: -12px;
+        left: 0;
+        height: 25px;
+        width: 1px;
+        background: black;
+        transform: rotate(-45deg);
+    }
+    #hero {
+        height: 90vh;
+    }
+    .hero-content {
+        width: 95%;
+    }
+    .partner-header {
+        padding: 20px 5%;
+    }
+    .partner-header h2 {
+        font-size: 20px;
+    }
+    .partner-container {
+        height: max-content;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .parner-img-container {
+        margin: 0 0 20px 0;
+    }
+    .courses-content-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .journey-header-middle h2 {
+        font-size: 35px;
+    }
+    #learners-report {
+        height: max-content;
+    }
+    .learners-report {
+        flex-direction: column;
+    }
+    .leaners-report-left {
+        width: 100%;
+        height: 40vh;
+    }
+    .learners-report-right {
+        height: max-content;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .learners-header h2 {
+        font-size: 25px;
+    }
+    .testimonial-header h2 {
+        font-size: 25px;
+    }
+    .testimonial-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .client-testimonial {
+        display: none;
+        width: 70%;
+        transition: 0.3s ease;
+    }
+    .client-testimonial.active {
+        display: flex;
+    }
+    .testimonial-navigation {
+        display: flex;
+    }
+    .move-left,
+    .move-right {
+        width: 30px;
+    }
+    .left-nav::before {
+        left: -35px;
+        transform: rotate(-85deg);
+    }
+    .left-nav::after {
+        left: -35px;
+        transform: rotate(85deg);
+    }
+    .right-nav::before {
+        left: -35px;
+        transform: rotate(85deg);
+    }
+    .right-nav::after {
+        left: -35px;
+        transform: rotate(-85deg);
+    }
+    #footer {
+        height: max-content;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-top-left {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-top-right {
+        width: 100%;
+    }
+    .footer-detail-container {
+        padding: 0 10px;
+    }
+    .footer-top {
+        margin: 0 0 20px 0;
+    }
+    .journey-bottom-top {
+        height: 40vh;
+        width: 100%;
+    }
+}
